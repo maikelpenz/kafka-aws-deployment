@@ -1,0 +1,13 @@
+name=PostgresConnector
+connector.class=io.debezium.connector.postgresql.PostgresConnector
+database.user=kadrds
+database.dbname=postgres
+tasks.max=1
+database.server.name=kadrds
+database.port=5432
+plugin.name=wal2json_rds
+schema.whitelist=public
+database.hostname=<RDS PUBLIC ENDPOINT>
+database.password=kadrds123
+transforms=unwrap
+transforms.unwrap.type=io.debezium.transforms.UnwrapFromEnvelope
