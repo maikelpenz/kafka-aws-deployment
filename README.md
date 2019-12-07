@@ -6,12 +6,12 @@ What is included:
 
 * Kafka Core - AWS MSK
 * Kafka Components - AWS ECS
-   - Kafka Connect (debezium)
-   - Kafka Connect UI
-   - Kafka Schema Registry
-   - Kafka Schema Registry UI
-   - Kafka Rest Proxy API
-   - Kafka KSQL Server
+   - Kafka Connect (debezium, by `https://debezium.io/` through https://hub.docker.com/r/debezium/connect)
+   - Kafka Connect UI (by `Landoop` through https://hub.docker.com/r/landoop/kafka-connect-ui)
+   - Kafka Schema Registry (by `Confluent` through https://hub.docker.com/r/confluentinc/cp-schema-registry/tags/)
+   - Kafka Schema Registry UI (by `Landoop` through https://hub.docker.com/r/landoop/schema-registry-ui/)
+   - Kafka Rest Proxy API (by `Confluent` through https://hub.docker.com/r/confluentinc/cp-kafka-rest)
+   - Kafka KSQL Server (by `Confluent` through https://hub.docker.com/r/confluentinc/cp-ksql-server)
 * VPC
 * RDS Database
 * Load Balancer
@@ -40,7 +40,7 @@ You need the following to deploy the project:
 ## Usage
 
    Before you deploy anything you need to make sure variables are set as expected on `aws-infrastructure\configuration`.  
-   There are 5 configuration files where most variables are set with default values *however* there is a section on top of each file called **NEED CONFIGURATION** that needs your manual intervention.
+   There are 5 configuration files where most variables are set with default values. *However*, there is a section on top of each file called **NEED CONFIGURATION** that needs your manual configuration.
 
    Position on the root level of this project
    
